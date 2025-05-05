@@ -1,6 +1,7 @@
 # Vigision: Advanced AI-Powered Home Surveillance System
 
 Vigision is an innovative Network Video Recorder (NVR) and AI Computer Vision software designed to transform traditional home camera systems into proactive guardians. Leveraging advanced Deep Learning technologies, Vigision offers features such as object detection, pose estimation, and intelligent motion detection to provide reliable, intelligent protection for your home and loved ones.
+
 ![Vigision_Image](images/image1.png)
 ---
 
