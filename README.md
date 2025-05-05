@@ -95,5 +95,5 @@ Before getting started, ensure you have the following installed:
 
 ## 🎥 Demonstration Video:
 
-[Video_Demo](https://www.youtube.com/watch?v=K6VdnhWZfHo)
+[![Watch the Demo on YouTube](images/image1.png)](https://www.youtube.com/watch?v=K6VdnhWZfHo)
 
