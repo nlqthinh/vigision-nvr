@@ -84,10 +84,10 @@ Before getting started, ensure you have the following installed:
 
      inside the container.
 
-3. Run backend or frontend code directly in VSCode's terminal, or in another terminal using:
+3. Install dependencies and start the frontend:
 
    ```bash
-   docker exec -it <container_id> /bin/bash
+   npm install && npm run dev
    ```
 
 ---
