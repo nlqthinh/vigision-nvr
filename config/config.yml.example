@@ -1,0 +1,30 @@
+detectors:
+  detector_name:
+    type: cpu
+detect:
+  enabled: false
+  fps: 15
+fall_detect:
+  enabled: false
+objects:
+  track:
+    - person
+record:
+  enabled: false
+  retain:
+    days: 0
+    mode: all
+  events:
+    retain:
+      default: 1.7
+  expire_interval: 60
+  sync_recordings: false
+snapshots:
+  enabled: false
+  timestamp: true
+  bounding_box: true
+  crop: true
+  quality: 100
+  retain:
+    default: 10
+version: 0.14

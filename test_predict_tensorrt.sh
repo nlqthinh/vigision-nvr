@@ -1,0 +1,1 @@
+yolo detect predict model=vigision/models/yolo/yolov8n.engine source="https://ultralytics.com/images/bus.jpg" device=0

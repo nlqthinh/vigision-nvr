@@ -1,0 +1,19 @@
+/* styles.css or a similar CSS file */
+.tooltip-content {
+    background-color: #7abc89; /* Green background */
+    border: 1px solid #7cbe6e; /* Black border */
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: white; /* Optional: To make text white for better contrast */
+    z-index: 999;
+  }
+  
+  .tooltip-arrow {
+    fill: #28a745; /* Ensure the arrow has the same background color as the tooltip */
+  }
+  
+  .tooltip-content-inner {
+    padding: 4px 8px;
+    font-size: 14px; /* Adjust as needed */
+  }
+  

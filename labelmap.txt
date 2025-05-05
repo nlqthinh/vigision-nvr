@@ -1,0 +1,14 @@
+0  person
+1  bicycle
+2  car
+3  motorcycle
+7  truck
+15 cat
+16  dog
+19  animal
+20  animal
+21  animal
+22  animal
+23  animal
+24  animal
+32  suitcase

@@ -1,0 +1,53 @@
+version: "3"
+services:
+  devcontainer:
+    container_name: vigision-devcontainer
+    # add groups from host for render, plugdev, video
+    group_add:
+      - "109" # render
+      - "110" # render
+      - "44"  # video
+      - "46"  # plugdev
+    shm_size: "2gb"
+    build:
+      context: .
+      dockerfile: docker/main/Dockerfile
+      # Use target devcontainer-trt for TensorRT dev
+      target: devcontainer
+    ## Uncomment this block for nvidia gpu support
+    deploy:
+          resources:
+              reservations:
+                  devices:
+                      - driver: nvidia
+                        count: 1
+                        capabilities: [gpu]
+    environment:
+      YOLO_MODELS: yolov7-320
+    devices:
+      - /dev/bus/usb:/dev/bus/usb
+      # - /dev/dri:/dev/dri # for intel hwaccel, needs to be updated for your hardware
+    volumes:
+      - .:/workspace/vigision:cached
+      - ./web/dist:/opt/vigision/web:cached
+      - /etc/localtime:/etc/localtime:ro
+      - ./config:/config
+      - ./debug:/media/vigision
+      - /dev/bus/usb:/dev/bus/usb
+  # mqtt:
+  #   container_name: mqtt_vigision
+  #   image: eclipse-mosquitto:1.6
+  #   ports:
+  #     - "1883:1883"
+
+  ngrok:
+    container_name: ngrok
+    image: ngrok/ngrok:latest
+    restart: unless-stopped
+    command: http devcontainer:5173  # Referencing the service name
+    environment:
+      - NGROK_AUTHTOKEN=""
+    depends_on:
+      - devcontainer
+    ports:
+      - "4040:4040"

@@ -1,0 +1,12 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Launch Vigision",
+      "type": "python",
+      "request": "launch",
+      "module": "vigision",
+      "justMyCode": true
+    }
+  ]
+}
