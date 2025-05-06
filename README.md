@@ -47,7 +47,7 @@ Before getting started, ensure you have the following installed:
 1. Open **WSL Ubuntu**.
 2. Navigate to the project directory:
    ```bash
-   cd frigate
+   cd vigision-nvr
    ```
 3. Start the Docker containers:
 
@@ -62,7 +62,7 @@ Before getting started, ensure you have the following installed:
 5. Run the backend:
 
    ```bash
-   python3 -m frigate
+   python3 -m vigision
    ```
 
 ### Frontend and Development Setup
@@ -71,11 +71,11 @@ Before getting started, ensure you have the following installed:
 
 2. Attach to the running Docker container:
 
-   * Select the `frigate` container.
+   * Select the `vigision` container.
    * Choose the workspace directory. The first time it prompts for the code path, enter:
 
      ```
-     /workspace/frigate
+     /workspace/vigision
      ```
    * (Optional) Check the path by executing:
 
